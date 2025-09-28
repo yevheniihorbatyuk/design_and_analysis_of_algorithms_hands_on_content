@@ -7,19 +7,29 @@
 
 ### Week 01 > todo
   - **NOTES**
+	  -  **Файл**: - [Types of Algorithms](Types%20of%20Algorithms.md)
+	      - **Короткий зміст**:
   - **PROJECTS**
       - > TODO
 
-
+> Практика в різних галузях
 
 ---
 
 ### Week 02 > todo
   - **NOTES**
+	-  **Файл**: - 
+		- **Короткий зміст**:
   - **PROJECTS**
       - > TODO
 
-
+> Дерева
+> +префіксні
+> +суфіксні
+> Графи
+> +Спеціальні структури
+> 
+> +🗺️ Просторові структури
 
 ---
 
@@ -28,16 +38,20 @@
   - **PROJECTS**
       - > TODO
 
-
+> Randomized Algorithms
+> Distributed Computing
 
 ---
 
 ### Week 04 > todo
   - **NOTES**
+  - 
   - **PROJECTS**
       - > TODO
 
 
+> - Cache Management Algorithms
+> - Flow Control and Rate Limiting Algorithms
 
 ---
 
@@ -46,14 +60,9 @@
   - **PROJECTS**
       - > TODO
 
-
----
-
-### Week 06 > todo
-  - **NOTES**
-  - **PROJECTS**
-      - > TODO
-
+> - Randomized Algorithms
+> - Optimization Algorithms MOC
+    -  Swarm Intelligence MOC | Particle Swarm Optimization
 
 ---
 
