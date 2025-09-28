@@ -14,7 +14,7 @@
 
 ### Week 01 > todo
   - **NOTES**
-	  -  **Файл**: [Problem_Solving_Paradigms](Problem_Solving_Paradigms.md)
+	  -  **Файл**: [Problem_Solving_Paradigms](materials/moc_content/Problem_Solving_Paradigms.md)
 	      - **Короткий зміст**:
 		      - Вище дається систематизований огляд основних типів підходів до побудови алгоритмів — з короткими поясненнями, прикладами, таблицями. Рекомендовано окремо детальніше прочитати самостійно про кожний підхід
   - **PROJECTS**
