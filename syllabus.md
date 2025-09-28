@@ -4,15 +4,26 @@
 ```
 
 ---
+## [Fully Map Of Content Algorithms](materials/Complete_Algorithms_MOC.md)
+> ✅ *(noted)* - описуються ті нотатки котрі описані і присутні в даному репозиторії
+> якщо у вас буде бажання доповнити  структуру/матеріалу робіть це, та кидайте pull request
+
+
+---
+## Weekly Agenda
 
 ### Week 01 > todo
   - **NOTES**
-	  -  **Файл**: - [Types of Algorithms](Types%20of%20Algorithms.md)
+	  -  **Файл**: [Problem_Solving_Paradigms](Problem_Solving_Paradigms.md)
 	      - **Короткий зміст**:
+		      - Вище дається систематизований огляд основних типів підходів до побудови алгоритмів — з короткими поясненнями, прикладами, таблицями. Рекомендовано окремо детальніше прочитати самостійно про кожний підхід
   - **PROJECTS**
-      - > TODO
+      - Базовий розбір теми 1 > [README](design_and_analysis_of_algorithms_hands_on_content/projects/week_01/topic_1_common/README.md)
+      - Базовий розбір теми 2 > [README](design_and_analysis_of_algorithms_hands_on_content/projects/week_01/topic_2_common/README.md)
 
-> Практика в різних галузях
+> todo
+> +Практика в різних галузях
+> + додати практику інших підходів 3/7
 
 ---
 
@@ -21,7 +32,7 @@
 	-  **Файл**: - 
 		- **Короткий зміст**:
   - **PROJECTS**
-      - > TODO
+      - 
 
 > Дерева
 > +префіксні
