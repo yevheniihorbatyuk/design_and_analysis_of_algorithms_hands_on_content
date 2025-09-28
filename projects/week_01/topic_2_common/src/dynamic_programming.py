@@ -472,8 +472,8 @@ class PerformanceComparator:
     @staticmethod
     def compare_coin_change(coins1=None, amount1=None, coins2=None, amount2=None):
         """Порівнює жадібний підхід та ДП для розміну монет"""
-        from greedy_algorithms import GreedyAlgorithms
-        from dynamic_programming import DynamicProgramming  # Припущено
+        from .greedy_algorithms import GreedyAlgorithms
+        from .dynamic_programming import DynamicProgramming  # Припущено
 
         # Канонічна система
         coins1 = coins1 or [25, 10, 5, 1]

@@ -11,15 +11,15 @@ from typing import List
 import matplotlib.pyplot as plt
 
 # Імпортуємо наші модулі
-from greedy_algorithms import (
+from .greedy_algorithms import (
     GreedyAlgorithms, HuffmanCoding, GreedyVisualizer,
     Activity, Item
 )
-from dynamic_programming import (
+from .dynamic_programming import (
     DynamicProgramming, DPVisualizer, PerformanceComparator,
     DPItem
 )
-from graph_algorithms import (
+from .graph_algorithms import (
     GraphAlgorithms, GraphVisualizer, TSPSolver,
     Edge
 )
