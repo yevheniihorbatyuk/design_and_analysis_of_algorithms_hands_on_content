@@ -1,0 +1,19 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  osrm:
+    image: osrm/osrm-backend
+    volumes:
+      - ./osm-data:/data
+    command: osrm-routed --algorithm ch /data/ukraine-latest.osrm
+    ports:
+      - "5005:5000"
+  
+  vroom:
+    image: vroomvrp/vroom-docker
+    ports:
+      - "5010:3000"
+    environment:
+      - VROOM_ROUTER=osrm
+ 
