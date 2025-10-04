@@ -1,19 +1,25 @@
-# docker-compose.yml
 version: '3.8'
 
 services:
-  osrm:
+  osrm-backend:
+    container_name: osrm_backend
     image: osrm/osrm-backend
-    volumes:
-      - ./osm-data:/data
-    command: osrm-routed --algorithm ch /data/ukraine-latest.osrm
     ports:
-      - "5005:5000"
-  
+      - "5000:5000"
+    volumes:
+      - ./data/osrm_data:/data
+    command: osrm-routed --algorithm mld /data/ukraine-latest.osm.pbf
   vroom:
-    image: vroomvrp/vroom-docker
+    container_name: vroom
+    image: ghcr.io/vroom-project/vroom-docker:v1.14.0
     ports:
       - "5010:3000"
     environment:
-      - VROOM_ROUTER=osrm
- 
+      - VROOM_ROUTER=osrm        # маршрутизатор: osrm/valhalla/ors
+    volumes:
+      - ./conf:/conf             # для config.yml vroom-express
+    depends_on:
+      - osrm-backend
+
+volumes:
+  osrm_data:
