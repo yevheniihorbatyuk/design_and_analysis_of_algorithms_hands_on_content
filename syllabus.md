@@ -18,8 +18,8 @@
 	      - **Короткий зміст**:
 		      - Вище дається систематизований огляд основних типів підходів до побудови алгоритмів — з короткими поясненнями, прикладами, таблицями. Рекомендовано окремо детальніше прочитати самостійно про кожний підхід
   - **PROJECTS**
-      - Базовий розбір теми 1 > [README](design_and_analysis_of_algorithms_hands_on_content/projects/week_01/topic_1_common/README.md)
-      - Базовий розбір теми 2 > [README](design_and_analysis_of_algorithms_hands_on_content/projects/week_01/topic_2_common/README.md)
+      - Базовий розбір теми 1 > [README](./projects/week_01/topic_1_common/README.md)
+      - Базовий розбір теми 2 > [README](./projects/week_01/topic_2_common/README.md)
 
 > todo
 > +Практика в різних галузях
