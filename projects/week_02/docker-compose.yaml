@@ -8,12 +8,12 @@ services:
       - "5000:5000"
     volumes:
       - ./data/osrm_data:/data
-    command: osrm-routed --algorithm mld /data/ukraine-latest.osm.pbf
+    command: osrm-routed --algorithm mld /data/ukraine-latest.osrm
   vroom:
     container_name: vroom
     image: ghcr.io/vroom-project/vroom-docker:v1.14.0
     ports:
-      - "5010:3000"
+      - "3010:3000"
     environment:
       - VROOM_ROUTER=osrm        # маршрутизатор: osrm/valhalla/ors
     volumes:

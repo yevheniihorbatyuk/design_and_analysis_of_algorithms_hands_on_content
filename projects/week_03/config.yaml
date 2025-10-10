@@ -1,0 +1,293 @@
+
+cities:
+  - name: Kyiv
+    country: Ukraine
+    bounds: {min_lat: 50.213, max_lat: 50.590, min_lon: 30.239, max_lon: 30.825}
+    center: {lat: 50.4501, lon: 30.5234}
+    zones: [Pechersk, Shevchenko, Podil, Obolon, Darnytsia]
+
+  - name: Lviv
+    country: Ukraine
+    bounds: {min_lat: 49.770, max_lat: 49.905, min_lon: 23.930, max_lon: 24.145}
+    center: {lat: 49.8397, lon: 24.0297}
+    zones: [Center, Lychakiv, Sykhiv, Frankivskyi]
+
+  - name: Kharkiv
+    country: Ukraine
+    bounds: {min_lat: 49.85, max_lat: 50.1, min_lon: 36.1, max_lon: 36.5}
+    center: {lat: 49.9935, lon: 36.2304}
+    zones: [Shevchenkivskyi, Kyivskyi, Moskovskyi, Slobidskyi, Nemyshlianskyi]
+
+  - name: Dnipro
+    country: Ukraine
+    bounds: {min_lat: 48.35, max_lat: 48.55, min_lon: 34.85, max_lon: 35.2}
+    center: {lat: 48.4647, lon: 35.0462}
+    zones: [Centralnyi, Amur-Nyzhnodniprovskyi, Shevchenkivskyi, Sobornyi]
+
+  - name: Odesa
+    country: Ukraine
+    bounds: {min_lat: 46.35, max_lat: 46.6, min_lon: 30.55, max_lon: 30.85}
+    center: {lat: 46.4825, lon: 30.7233}
+    zones: [Prymorskyi, Malynovskyi, Kyivskyi, Suvorovskyi]
+
+  - name: Zaporizhzhia
+    country: Ukraine
+    bounds: {min_lat: 47.75, max_lat: 47.9, min_lon: 35.05, max_lon: 35.25}
+    center: {lat: 47.8388, lon: 35.1396}
+    zones: [Oleksandrivskyi, Dniprovskyi, Komunarskyi, Shevchenkivskyi]
+
+  - name: Vinnytsia
+    country: Ukraine
+    bounds: {min_lat: 49.18, max_lat: 49.3, min_lon: 28.35, max_lon: 28.55}
+    center: {lat: 49.2331, lon: 28.4682}
+    zones: [Centralnyi, Zamostianskyi, Staromiskyi]
+
+  - name: Poltava
+    country: Ukraine
+    bounds: {min_lat: 49.55, max_lat: 49.65, min_lon: 34.45, max_lon: 34.65}
+    center: {lat: 49.5883, lon: 34.5514}
+    zones: [Kyivskyi, Shevchenkivskyi, Podilskyi]
+
+  - name: Chernihiv
+    country: Ukraine
+    bounds: {min_lat: 51.43, max_lat: 51.55, min_lon: 31.20, max_lon: 31.35}
+    center: {lat: 51.4982, lon: 31.2893}
+    zones: [Desnianskyi, Novozavodskyi]
+
+  - name: Sumy
+    country: Ukraine
+    bounds: {min_lat: 50.85, max_lat: 51.00, min_lon: 34.70, max_lon: 34.90}
+    center: {lat: 50.9077, lon: 34.7981}
+    zones: [Kovpakivskyi, Zarichnyi]
+
+  - name: Cherkasy
+    country: Ukraine
+    bounds: {min_lat: 49.38, max_lat: 49.47, min_lon: 31.95, max_lon: 32.15}
+    center: {lat: 49.4444, lon: 32.0598}
+    zones: [Pivnichnyi, Tsentralnyi, Yuzhnyi]
+
+  - name: Zhytomyr
+    country: Ukraine
+    bounds: {min_lat: 50.20, max_lat: 50.30, min_lon: 28.60, max_lon: 28.75}
+    center: {lat: 50.2547, lon: 28.6587}
+    zones: [Bohunskyi, Koroliovskyi]
+
+  - name: Rivne
+    country: Ukraine
+    bounds: {min_lat: 50.58, max_lat: 50.65, min_lon: 26.18, max_lon: 26.3}
+    center: {lat: 50.6199, lon: 26.2516}
+    zones: [Tsentralnyi, Pivnichnyi, Pivdennyi]
+
+  - name: Ternopil
+    country: Ukraine
+    bounds: {min_lat: 49.50, max_lat: 49.60, min_lon: 25.50, max_lon: 25.65}
+    center: {lat: 49.5535, lon: 25.5948}
+    zones: [Tsentralnyi, Dniprovskyi, Zapadnyi]
+
+  - name: Ivano-Frankivsk
+    country: Ukraine
+    bounds: {min_lat: 48.88, max_lat: 48.97, min_lon: 24.65, max_lon: 24.77}
+    center: {lat: 48.9226, lon: 24.7111}
+    zones: [Tsentralnyi, Pasichna, Bam, Kaskad]
+
+  - name: Uzhhorod
+    country: Ukraine
+    bounds: {min_lat: 48.58, max_lat: 48.65, min_lon: 22.25, max_lon: 22.35}
+    center: {lat: 48.6208, lon: 22.2879}
+    zones: [Tsentralnyi, Pidzamkovyi, Bozdosh, Domanynskyi]
+
+  - name: Lutsk
+    country: Ukraine
+    bounds: {min_lat: 50.68, max_lat: 50.78, min_lon: 25.25, max_lon: 25.40}
+    center: {lat: 50.7472, lon: 25.3254}
+    zones: [Tsentralnyi, Pivnichnyi, Zahidnyi]
+
+  - name: Khmelnytskyi
+    country: Ukraine
+    bounds: {min_lat: 49.38, max_lat: 49.45, min_lon: 26.90, max_lon: 27.05}
+    center: {lat: 49.4216, lon: 26.9965}
+    zones: [Tsentralnyi, Dovhyntsi, Raktarivka]
+
+  - name: Chernivtsi
+    country: Ukraine
+    bounds: {min_lat: 48.23, max_lat: 48.33, min_lon: 25.85, max_lon: 25.98}
+    center: {lat: 48.2915, lon: 25.9403}
+    zones: [Tsentralnyi, Pivdennyi, Sadgora]
+
+  - name: Kropyvnytskyi
+    country: Ukraine
+    bounds: {min_lat: 48.45, max_lat: 48.55, min_lon: 32.10, max_lon: 32.35}
+    center: {lat: 48.5079, lon: 32.2623}
+    zones: [Tsentralnyi, Pivdennyi, Balashivka]
+
+  - name: Mykolaiv
+    country: Ukraine
+    bounds: {min_lat: 46.85, max_lat: 47.00, min_lon: 31.85, max_lon: 32.15}
+    center: {lat: 46.9750, lon: 31.9946}
+    zones: [Tsentralnyi, Korabelnyi, Inhulskyi]
+
+  - name: Kherson
+    country: Ukraine
+    bounds: {min_lat: 46.55, max_lat: 46.70, min_lon: 32.45, max_lon: 32.75}
+    center: {lat: 46.6354, lon: 32.6169}
+    zones: [Dniprovskyi, Korabelnyi, Tsentralnyi]
+
+  - name: Kremenchuk
+    country: Ukraine
+    bounds: {min_lat: 49.02, max_lat: 49.15, min_lon: 33.35, max_lon: 33.55}
+    center: {lat: 49.0667, lon: 33.4167}
+    zones: [Tsentralnyi, Kryukivskyi]
+
+  - name: Mariupol
+    country: Ukraine
+    bounds: {min_lat: 47.05, max_lat: 47.20, min_lon: 37.45, max_lon: 37.70}
+    center: {lat: 47.0971, lon: 37.5434}
+    zones: [Tsentralnyi, Livoberezhnyi, Prymorskyi]
+
+  - name: Kryvyi Rih
+    country: Ukraine
+    bounds: {min_lat: 47.85, max_lat: 48.15, min_lon: 33.25, max_lon: 33.55}
+    center: {lat: 47.9105, lon: 33.3918}
+    zones: [Tsentralno-Miskyi, Saksahanskyi, Pokrovskyi, Ternivskyi]
+
+  - name: Luhansk
+    country: Ukraine
+    bounds: {min_lat: 48.45, max_lat: 48.65, min_lon: 39.15, max_lon: 39.45}
+    center: {lat: 48.5740, lon: 39.3078}
+    zones: [Kamianobrodskiy, Artemivskyi, Zhovtnevyi, Leninskyi]
+
+  - name: Donetsk
+    country: Ukraine
+    bounds: {min_lat: 47.90, max_lat: 48.10, min_lon: 37.65, max_lon: 37.95}
+    center: {lat: 48.0159, lon: 37.8028}
+    zones: [Voroshylovskyi, Kalininskyi, Kuibyshevskyi, Kyivskyi, Petrovskyi]
+
+  - name: Simferopol
+    country: Ukraine
+    region: Crimea
+    bounds: {min_lat: 44.90, max_lat: 45.10, min_lon: 33.90, max_lon: 34.20}
+    center: {lat: 44.9521, lon: 34.1024}
+    zones: [Tsentralnyi, Zaliznychnyi, Kyivskyi]
+
+  - name: Sevastopol
+    country: Ukraine
+    region: Crimea
+    bounds: {min_lat: 44.50, max_lat: 44.65, min_lon: 33.40, max_lon: 33.65}
+    center: {lat: 44.6167, lon: 33.5254}
+    zones: [Balaklava, Nakhimovskyi, Haharinskyi]
+
+  - name: Yalta
+    country: Ukraine
+    region: Crimea
+    bounds: {min_lat: 44.45, max_lat: 44.55, min_lon: 34.10, max_lon: 34.25}
+    center: {lat: 44.5000, lon: 34.1667}
+    zones: [Tsentralnyi, Livadia, Massandra, Oreanda]
+
+  - name: Alushta
+    country: Ukraine
+    region: Crimea
+    bounds: {min_lat: 44.63, max_lat: 44.70, min_lon: 34.35, max_lon: 34.45}
+    center: {lat: 44.6764, lon: 34.4100}
+    zones: [Kurortna, Verkhovynska, Pivdenna]
+
+  - name: Melitopol
+    country: Ukraine
+    bounds: {min_lat: 46.80, max_lat: 47.00, min_lon: 35.20, max_lon: 35.45}
+    center: {lat: 46.8489, lon: 35.3675}
+    zones: [Tsentralnyi, Pivnichnyi, Zaliznychnyi]
+
+  - name: Berdiansk
+    country: Ukraine
+    bounds: {min_lat: 46.72, max_lat: 46.85, min_lon: 36.70, max_lon: 36.90}
+    center: {lat: 46.7550, lon: 36.7865}
+    zones: [Kurortnyi, Tsentralnyi, Azovskyi]
+
+  - name: Kramatorsk
+    country: Ukraine
+    bounds: {min_lat: 48.65, max_lat: 48.80, min_lon: 37.45, max_lon: 37.65}
+    center: {lat: 48.7389, lon: 37.5840}
+    zones: [Tsentralnyi, Yasnohirka, Sosnivka]
+
+  - name: Sloviansk
+    country: Ukraine
+    bounds: {min_lat: 48.80, max_lat: 48.90, min_lon: 37.50, max_lon: 37.70}
+    center: {lat: 48.8667, lon: 37.6167}
+    zones: [Tsentralnyi, Khimik, Mashzavod]
+
+  - name: Lysychansk
+    country: Ukraine
+    bounds: {min_lat: 48.85, max_lat: 48.95, min_lon: 38.35, max_lon: 38.55}
+    center: {lat: 48.9167, lon: 38.4333}
+    zones: [Tsentralnyi, Pivdennyi, Skhidnyi]
+
+  # - name: Mariinskyi
+  #   country: Ukraine
+  #   bounds: {min_lat: 48.05, max_lat: 48.15, min_lon: 37.30, max_lon: 37.45}
+  #   center: {lat: 48.10, lon: 37.35}
+  #   zones: [Tsentralnyi, Vuzlovyi, Stepovyi]
+
+  - name: Uman
+    country: Ukraine
+    bounds: {min_lat: 48.70, max_lat: 48.80, min_lon: 30.15, max_lon: 30.30}
+    center: {lat: 48.7500, lon: 30.2167}
+    zones: [Tsentralnyi, Sofiyivka, Pivnichnyi]
+
+  - name: Kamianets-Podilskyi
+    country: Ukraine
+    bounds: {min_lat: 48.65, max_lat: 48.75, min_lon: 26.55, max_lon: 26.65}
+    center: {lat: 48.6848, lon: 26.5806}
+    zones: [Staryi, Novyi, Pivdennyi]
+
+  - name: Mukachevo
+    country: Ukraine
+    bounds: {min_lat: 48.40, max_lat: 48.50, min_lon: 22.65, max_lon: 22.80}
+    center: {lat: 48.4464, lon: 22.7182}
+    zones: [Tsentralnyi, Rosvyhovo, Pidgoriany]
+
+  - name: Drohobych
+    country: Ukraine
+    bounds: {min_lat: 49.32, max_lat: 49.38, min_lon: 23.45, max_lon: 23.60}
+    center: {lat: 49.3500, lon: 23.5000}
+    zones: [Tsentralnyi, Spasiv, Pidzamche]
+
+  - name: Kalush
+    country: Ukraine
+    bounds: {min_lat: 49.00, max_lat: 49.10, min_lon: 24.30, max_lon: 24.45}
+    center: {lat: 49.0447, lon: 24.3590}
+    zones: [Tsentralnyi, Pivnichnyi, Promyslovyi]
+
+  - name: Kovel
+    country: Ukraine
+    bounds: {min_lat: 51.18, max_lat: 51.25, min_lon: 24.65, max_lon: 24.80}
+    center: {lat: 51.2167, lon: 24.7167}
+    zones: [Tsentralnyi, Zaliznychnyi, Pivdennyi]
+
+  - name: Bila Tserkva
+    country: Ukraine
+    bounds: {min_lat: 49.75, max_lat: 49.85, min_lon: 30.00, max_lon: 30.25}
+    center: {lat: 49.7956, lon: 30.1183}
+    zones: [Tsentralnyi, Pivdennyi, Zavodska]
+
+  - name: Brovary
+    country: Ukraine
+    bounds: {min_lat: 50.47, max_lat: 50.55, min_lon: 30.75, max_lon: 30.90}
+    center: {lat: 50.5111, lon: 30.7900}
+    zones: [Tsentralnyi, Pivnichnyi, Zavodska]
+
+  - name: Irpin
+    country: Ukraine
+    bounds: {min_lat: 50.47, max_lat: 50.56, min_lon: 30.20, max_lon: 30.33}
+    center: {lat: 50.5218, lon: 30.2506}
+    zones: [Tsentralnyi, Buchanskyi, Pivnichnyi]
+
+  - name: Fastiv
+    country: Ukraine
+    bounds: {min_lat: 50.05, max_lat: 50.13, min_lon: 29.88, max_lon: 30.05}
+    center: {lat: 50.0784, lon: 29.9170}
+    zones: [Tsentralnyi, Zavodska, Prymiska]
+
+  - name: Boryspil
+    country: Ukraine
+    bounds: {min_lat: 50.33, max_lat: 50.38, min_lon: 30.90, max_lon: 31.05}
+    center: {lat: 50.3456, lon: 30.9569}
+    zones: [Tsentralnyi, Aeroport, Prymisky]

@@ -1,6 +1,9 @@
+
+*_etalon/
 export.py
 data/
 conf/
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

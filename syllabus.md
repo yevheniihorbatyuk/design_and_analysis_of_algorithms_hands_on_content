@@ -29,10 +29,16 @@
 
 ### Week 02 > todo
   - **NOTES**
-	-  **Файл**: - 
+	-  **Файл**: [CONTENT lesson 2](<materials/Blended 2. Design and Analysis of Algorithms CONTENT.md>)
 		- **Короткий зміст**:
+  		- 
+	-  **Файл**: [PRESENTATION lesson 2](<materials/Blended 2. Design and Analysis of Algorithms CONTENT PRESENTATION 🖼️.md>)
+		- **Короткий зміст**:
+  		- 
   - **PROJECTS**
-      - 
+      - [README lesson 2](projects/week_02/README.md) 
+      - [Jupyter notebook/main](projects/week_02/main_notebook.ipynb)
+      - [Jupyter notebook/workshop](projects/week_02/logistics_workshop.ipynb)
 
 > Дерева
 > +префіксні

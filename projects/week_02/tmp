@@ -1,0 +1,75 @@
+{
+  "code": 0,
+  "summary": {
+    "cost": 365,
+    "routes": 1,
+    "unassigned": 0,
+    "setup": 0,
+    "service": 0,
+    "duration": 365,
+    "waiting_time": 0,
+    "priority": 0,
+    "violations": [],
+    "computing_times": {
+      "loading": 14,
+      "solving": 0,
+      "routing": 0
+    }
+  },
+  "unassigned": [],
+  "routes": [
+    {
+      "vehicle": 0,
+      "cost": 365,
+      "setup": 0,
+      "service": 0,
+      "duration": 365,
+      "waiting_time": 0,
+      "priority": 0,
+      "steps": [
+        {
+          "type": "start",
+          "location": [
+            30.5234,
+            50.4501
+          ],
+          "setup": 0,
+          "service": 0,
+          "waiting_time": 0,
+          "arrival": 0,
+          "duration": 0,
+          "violations": []
+        },
+        {
+          "type": "job",
+          "location": [
+            30.53,
+            50.45
+          ],
+          "id": 1,
+          "setup": 0,
+          "service": 0,
+          "waiting_time": 0,
+          "job": 1,
+          "arrival": 241,
+          "duration": 241,
+          "violations": []
+        },
+        {
+          "type": "end",
+          "location": [
+            30.5234,
+            50.4501
+          ],
+          "setup": 0,
+          "service": 0,
+          "waiting_time": 0,
+          "arrival": 365,
+          "duration": 365,
+          "violations": []
+        }
+      ],
+      "violations": []
+    }
+  ]
+}
