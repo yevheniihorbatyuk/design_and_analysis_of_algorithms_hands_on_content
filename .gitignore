@@ -221,3 +221,4 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+projects/week_04/raw_4/alg_blended/.cache.sqlite

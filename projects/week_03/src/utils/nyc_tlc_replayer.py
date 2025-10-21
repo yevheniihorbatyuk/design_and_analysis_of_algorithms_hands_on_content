@@ -41,7 +41,7 @@ Dependencies
 ------------
   pip install pyarrow pandas requests confluent-kafka
 """
-c
+
 from __future__ import annotations
 
 import argparse
