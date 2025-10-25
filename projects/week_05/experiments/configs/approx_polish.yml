@@ -1,0 +1,35 @@
+# Approx → Polish: MST-doubletree + 2-opt
+# Демонстрація комбінації наближеного алгоритму з локальним пошуком
+
+problem:
+  name: tsp
+  source: tsplib  # Використовуємо реальні інстанси
+  file: data/tsp/att48.tsp
+  optimal: 33523  # Відома оптимальна довжина (для обчислення gap)
+
+algorithms:
+  # Крок 1: Наближений алгоритм
+  approx:
+    name: tsp_mst_doubletree  # 2-approximation
+  
+  # Крок 2: Полірування локальним пошуком
+  polish:
+    name: ls_tsp_2opt
+    acceptance: best
+    time_budget_s: 60
+
+experiment:
+  seeds: [0, 1, 2, 3, 4]
+  compare_with_pure_ls: true  # Порівняти з LS з випадкового старту
+  
+output:
+  file: experiments/results_approx_polish.csv
+  format: csv
+  metrics:
+    - approx_value
+    - approx_gap  # Gap до оптимуму після approx
+    - final_value
+    - final_gap   # Gap після polish
+    - improvement  # Покращення від polish
+    - time_approx
+    - time_polish

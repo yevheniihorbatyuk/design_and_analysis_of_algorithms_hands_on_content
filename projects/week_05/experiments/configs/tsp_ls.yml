@@ -1,0 +1,22 @@
+# Local Search на TSP (2-opt)
+# Приклад конфігурації для Hill Climbing/Steepest Descent/Random LS
+
+problem:
+  name: tsp
+  source: generator  # або 'tsplib'
+  n: 100            # кількість міст (для generator)
+  seed: 42          # seed для генератора
+  # file: data/tsp/gr17.tsp  # для TSPLIB
+
+algorithm:
+  name: ls_tsp_2opt
+  acceptance: first  # first | best | random
+  max_no_improve: 2000
+
+experiment:
+  seeds: [0, 1, 2, 3, 4, 5, 6, 7]  # Multiple runs для статистики
+  time_budget_s: 30  # Максимальний час на один прогон
+  
+output:
+  file: experiments/results_tsp_ls.csv
+  format: csv

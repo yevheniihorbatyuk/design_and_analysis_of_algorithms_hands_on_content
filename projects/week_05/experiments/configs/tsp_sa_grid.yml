@@ -1,0 +1,35 @@
+# Simulated Annealing на TSP з grid search параметрів
+# Використовується для ray_driver.py / dask_driver.py
+
+problem:
+  name: tsp
+  source: generator
+  n: 150
+  seed: 123
+
+algorithm:
+  name: sa_tsp_2opt
+  T0: auto  # Автоматична калібрування або конкретне значення
+  alpha: 0.97  # Базове значення (для single run)
+  schedule: geometric  # geometric | linear | logarithmic
+  steps_per_level: 2000
+
+# Grid search параметрів (для паралельних експериментів)
+grid:
+  alpha: [0.95, 0.97, 0.99]
+  # T0: [0.01, 0.05, 0.1]  # Якщо не auto
+
+experiment:
+  seeds: [0, 1, 2, 3, 4, 5, 6, 7]
+  time_budget_s: 60
+  
+output:
+  file: experiments/results_sa_grid.csv
+  format: csv
+  include_trajectory: false  # Зберігати траєкторію збіжності
+
+# Діагностика SA
+diagnostics:
+  log_acceptance_rate: true
+  log_temperature: false
+  trajectory_interval: 100  # Логувати кожні 100 ітерацій

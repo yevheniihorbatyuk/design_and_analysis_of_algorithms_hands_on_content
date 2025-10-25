@@ -1,0 +1,30 @@
+# Knapsack FPTAS (Fully Polynomial-Time Approximation Scheme)
+# Демонстрація гарантованого (1+ε)-наближення
+
+problem:
+  name: knapsack
+  source: generator
+  n: 500  # Кількість предметів
+  capacity_ratio: 0.5  # Місткість = 50% від загальної ваги
+  correlation: 0.8  # Кореляція вага-цінність (harder instances)
+  seed: 42
+
+algorithm:
+  name: knapsack_fptas
+  epsilon: 0.1  # (1+ε)-approximation, ε=0.1 → 10% gap гарантований
+  # Менше ε = краща якість але повільніше
+  # ε=0.01 → 1% gap, але ~10x повільніше
+
+experiment:
+  # Тестування різних ε
+  epsilon_values: [0.5, 0.2, 0.1, 0.05, 0.01]
+  seeds: [0, 1, 2]
+  
+output:
+  file: experiments/results_knapsack_fptas.csv
+  format: csv
+  metrics:
+    - epsilon
+    - value
+    - time_s
+    - n_states  # Розмір DP таблиці
