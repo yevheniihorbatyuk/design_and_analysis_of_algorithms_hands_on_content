@@ -1,0 +1,67 @@
+apiVersion: ray.io/v1
+kind: RayCluster
+metadata:
+  name: ray-swarm
+  namespace: ray
+spec:
+  # ОНОВЛЕНО: Використовуємо Ray 2.49.2 (як зазначено в образах)
+  rayVersion: "2.49.2"
+  
+  # ====================================================
+  # HEAD GROUP SPEC (Control Plane)
+  # ====================================================
+  headGroupSpec:
+    serviceType: ClusterIP   # <-- не NodePort
+    rayStartParams:
+      dashboard-host: "0.0.0.0"
+
+      
+    template:
+      spec:
+        containers:
+          - name: ray-head
+            # ВИПРАВЛЕННЯ: Використовуємо Ray 2.49.2-py312, як у Worker
+            image: rayproject/ray:2.49.2-py312 
+            imagePullPolicy: IfNotPresent
+            env:
+              - name: RAY_memory_monitor_refresh_ms
+                value: "0"
+            ports:
+              - name: gcs-server
+                containerPort: 6379  # GCS Internal
+              - name: dashboard
+                containerPort: 8265  # Dashboard UI (Доступно на хості через NodePort)
+              - name: client
+                containerPort: 10001 # Ray Client (gRPC) (Доступно на хості через NodePort)
+            resources:
+              requests:
+                cpu: "1"
+                memory: "1Gi"
+              limits:
+                cpu: "2"
+                memory: "2Gi"
+
+  # ====================================================
+  # WORKER GROUP SPECS
+  # ====================================================
+  workerGroupSpecs:
+    - groupName: workers
+      replicas: 2
+      minReplicas: 1
+      maxReplicas: 4
+      rayStartParams: {} 
+      template:
+        spec:
+          containers:
+            - name: ray-worker
+              # ВИПРАВЛЕННЯ: Виправлена помилка дублювання 'ray:ray:'
+              image: rayproject/ray:2.49.2-py312
+              imagePullPolicy: IfNotPresent
+              resources:
+                requests:
+                  # Знижений CPU для Worker'ів (вирішення Insufficient CPU)
+                  cpu: "200m" 
+                  memory: "1Gi"
+                limits:
+                  cpu: "2"
+                  memory: "2Gi"

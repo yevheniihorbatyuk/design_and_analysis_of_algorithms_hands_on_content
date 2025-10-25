@@ -1,0 +1,24 @@
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+nodes:
+  - role: control-plane
+    # Kubeadm patches are necessary for some setups, like using an Ingress Controller, 
+    # but the extraPortMappings are sufficient for exposing Ray ports via NodePort.
+    kubeadmConfigPatches:
+      - |
+        kind: InitConfiguration
+        nodeRegistration:
+          kubeletExtraArgs:
+            node-labels: "ingress-ready=true"
+    extraPortMappings:
+      # Expose Ray Dashboard (default port 8265) via NodePort 30080
+      - containerPort: 30080
+        hostPort: 30080
+        protocol: TCP
+      # Expose Ray Client (default port 10001) via NodePort 30001
+      - containerPort: 30001
+        hostPort: 30001
+        protocol: TCP
+  # You can add worker nodes here if needed, but the Ray Head node (control-plane)
+  # is sufficient for exposing the dashboard and client ports.
+  # - role: worker
