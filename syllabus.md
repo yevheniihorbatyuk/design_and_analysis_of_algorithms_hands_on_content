@@ -2,7 +2,7 @@
 
 ```table-of-contents
 ```
-
+.
 ---
 ## [Fully Map Of Content Algorithms](materials/Complete_Algorithms_MOC.md)
 > ✅ *(noted)* - описуються ті нотатки котрі описані і присутні в даному репозиторії
